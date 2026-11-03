@@ -1,19 +1,19 @@
 class Patent < Formula
   desc "A prior-art search for your code ideas — has this dev tool already been shipped?"
   homepage "https://github.com/r14dd/patent"
-  version "0.14.1"
+  version "0.14.2"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/r14dd/patent/releases/download/v0.14.1/patent-aarch64-apple-darwin.tar.xz"
-    sha256 "6703fc8a0830b82704ef75f598442103e285641c2c9ce3de6926a993f3e41dac"
+    url "https://github.com/r14dd/patent/releases/download/v0.14.2/patent-aarch64-apple-darwin.tar.xz"
+    sha256 "de8992145a2da31ec52fe1d3701139915c424a944b3422c1cf0d669264450f36"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/r14dd/patent/releases/download/v0.14.1/patent-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "0901410df7d48147ba0e38fd2abe935aa8bf2d713e1814f33d821a4e0db92917"
+      url "https://github.com/r14dd/patent/releases/download/v0.14.2/patent-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "209ab341b8e4a2127bb1f9e2ddeee5f61eb5adf115fba373db738460bb895511"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/r14dd/patent/releases/download/v0.14.1/patent-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8157a81f8390d3815ee233e9640ec6c4224ab65ca98b8bfb0fcbd560dbc3998d"
+      url "https://github.com/r14dd/patent/releases/download/v0.14.2/patent-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "32b9f538eb099ac5398417615fd6df6df4d2f7778bda82bdae94d1379eb5f818"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
